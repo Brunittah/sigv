@@ -1,0 +1,358 @@
+
+
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p1/3025993-vivido-escuro-tinta-azul-cor-de-fundo-gratis-foto.jpg');
+    /* Define a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    position: relative;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#logo {
+    margin: 0;
+    font-size: 48px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    background: linear-gradient(#0400e0, #00d7df);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#menu a {
+    color: rgb(196, 196, 196);
+    /* Define a cor do texto inicialmente */
+    transition: color 0.3s;
+    /* Adiciona uma transição suave para a mudança de cor */
+}
+
+#menu a:hover {
+    color: #00f7ffd8;
+    /* Define a cor do texto quando o mouse passa sobre ele */
+}
+
+#menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos da seção */
+section {
+    padding: 40px 0;
+}
+
+section h1 {
+    text-align: center;
+    color: #00c3ff;
+    /* Cor ciano para se destacar */
+    transition: color 0.3s;
+    /* Transição suave para mudança de cor */
+}
+
+section h2, section h3 {
+    text-align: center;
+    color: #1df8f8c9;
+    /* Cor ciano para se destacar */
+    transition: color 0.3s;
+    /* Transição suave para mudança de cor */
+}
+
+section h4, section h5 {
+    text-align: center;
+    color: #00e1ffc9;
+    /* Cor ciano para se destacar */
+    transition: color 0.3s;
+    /* Transição suave para mudança de cor */
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos da seção 'about' */
+#about {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 0;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.content-with-image {
+    display: flex;
+    align-items: flex-start;
+    /* Alinha a imagem com o topo dos parágrafos */
+}
+
+.content-with-image .text {
+    flex: 3;
+}
+
+.content-with-image .image-container {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 200px;
+    transition: transform 0.3s;
+    /* Animação de zoom */
+    cursor: pointer;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    /* Zoom ao passar o rato */
+}
+
+.image-container img.expanded {
+    transform: scale(2);
+    /* Expande a imagem ao dobro do tamanho */
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos do rodapé */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fundo mais escuro */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 14px;
+    /* Texto menor */
+}
+
+footer img {
+    width: 80px;
+    /* Define a largura da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    filter: brightness(150%);
+    /* Ajusta o brilho da imagem para tornar o texto mais visível */
+}
+
+.footer-section-left,
+.footer-section-right {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-section-right {
+    text-align: right;
+}
+
+.footer-section-center {
+    text-align: center;
+    flex: 1;
+}
+
+footer a {
+    color: #26beec;
+    /* Links ciano */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #30a6f5;
+    /* Links dourados ao passar o mouse */
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos adicionais */
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.feedback {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.feedback p {
+    margin-bottom: 10px;
+}
+
+.feedback footer {
+    font-style: italic;
+}
+
+.feedback:last-child {
+    margin-bottom: 0;
+}
+
+#feedbackForm {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Estilos para o formulário de feedback */
+#feedbackForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#feedbackForm input[type="text"],
+#feedbackForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    /* Adiciona uma linha na parte inferior */
+    box-sizing: border-box;
+    /* Garante que o padding não altera a largura total */
+    font-size: 16px;
+}
+
+#feedbackForm textarea {
+    resize: vertical;
+    /* Permite redimensionamento vertical */
+}
+
+#feedbackForm input[type="submit"] {
+    background-color: #4c00ffb9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#feedbackForm input[type="submit"]:hover {
+    background-color: #00f7ffd8;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos adicionais para a seção de contatos */
+#contact-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 0;
+}
+
+.contact {
+    text-align: center;
+    color: #fff;
+    flex: 1;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    text-align: center;
+    /* Centraliza o texto */
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos para o mapa */
+#map {
+    text-align: center;
+    /* Centraliza horizontalmente */
+    width: 100%;
+}
+
+#map .container {
+    display: inline-block;
+    /* Mantém o container do mapa em linha */
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos para o slider */
+.slide-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slide-container img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+    /* Modificado para -200% */
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos para inputs de texto e textarea */
+input[type="text"],
+textarea {
+    background-color: rgba(255, 255, 255, 0.384);
+    /* Define a cor de fundo com transparência */
+    border: 1px solid #ccc;
+    /* Adicione uma borda para destacar as caixas de texto */
+    padding: 8px;
+    /* Adicione algum preenchimento para melhorar a aparência */
+    margin-bottom: 10px;
+    /* Adicione margem na parte inferior para separar os campos */
+}
+
+/* Estilo adicional para o textarea */
+textarea {
+    height: 100px;
+    /* Defina uma altura fixa para o textarea */
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos adicionais para imagens no site */
+.site img {
+    max-width: 200px;
+    /* Defina a largura máxima desejada */
+    height: auto;
+    /* Mantenha a proporção da imagem */
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+.site {
+    margin-bottom: 20px; /* Adiciona espaço entre os elementos .site */
+}
+
+.site-description {
+    margin-bottom: 10px; /* Adiciona espaço abaixo das descrições dos sites */
+}
+
+.content-with-image p {
+    margin-bottom: 15px; /* Adiciona espaço abaixo dos parágrafos dentro do content-with-image */
+}
